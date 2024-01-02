@@ -1,7 +1,7 @@
 # Whiteboard Online Assignment
 # Frontend : npm start
 # Backend : npm run dev
-# Home page:
+# Home page: 
 `![home](https://github.com/NeerajaNeelima/Whiteboard_online/assets/107545511/25bf8e96-e2f6-4bba-83ce-e0484eddf25b)`
 
 
