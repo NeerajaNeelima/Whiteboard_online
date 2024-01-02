@@ -6,7 +6,7 @@ import RoomPage from './pages/RoomPage/RoomPage';
 import {io} from "socket.io-client"
 import './App.css';
 import { ToastContainer, toast } from 'react-toastify';
-const server = "http://localhost:5000";
+const server = "https://whiteboard-li30.onrender.com/";
 const connectionOptions= {
   "force new connection":true,
   reconnectionAttempts:Infinity,
