@@ -157,7 +157,7 @@ const WhiteBoard = ({ canvasRef, ctxRef, elements, setElements, tool, color, use
 
   if (!user?.presenter) {
     return (
-      <div className='border border-dark border-3 h-100 w-100 overflow-hidden'>
+      <div className='border border-dark border-2 h-100 w-100 overflow-hidden bg-white rounded-2'>
         <img src={img} alt='Real time white board'
         style={{
           height:window.innerHeight * 2,
@@ -173,7 +173,7 @@ const WhiteBoard = ({ canvasRef, ctxRef, elements, setElements, tool, color, use
       onMouseDown={handleMouseDown}
       onMouseMove={handleMouseMove}
       onMouseUp={handleMouseUp}
-      className='border border-dark border-3 h-100 w-100 overflow-hidden ms-0'>
+      className='border border-dark border-2 h-100 w-100 overflow-hidden ms-0 bg-white rounded-2'>
       
       <canvas ref={canvasRef} />
     </div>

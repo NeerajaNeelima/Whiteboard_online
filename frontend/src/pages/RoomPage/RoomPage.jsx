@@ -134,7 +134,7 @@ const RoomPage = ({ user, socket, Joinedusers }) => {
             </div>
             )}
       {openchattab && <Chat setOpenChatTab={setOpenChatTab} socket={socket} />}
-      <h1 className="text-center py-4">
+      <h1 className="text-center py-4 text-white">
         WhiteBoard 
       </h1>
       {/* <span className="text-primary">[Users Online : {Joinedusers.length || 0}]</span> */}
@@ -142,7 +142,7 @@ const RoomPage = ({ user, socket, Joinedusers }) => {
         <div className="col-md-10 mx-auto gap-3 px-5  mb-3 d-flex align-items-center justify-content-center">
           <div className="d-flex col-md-2 justify-content-center gap-1">
             <div className="d-flex gap-1 align-itmes-center">
-              <label htmlFor="pencil">Pencil</label>
+              <label htmlFor="pencil" className='text-white'>Pencil</label>
               <input
                 type="radio"
                 name="tool"
@@ -153,7 +153,7 @@ const RoomPage = ({ user, socket, Joinedusers }) => {
               />
             </div>
             <div className="d-flex gap-1 align-itmes-center">
-              <label htmlFor="line">Line</label>
+              <label htmlFor="line" className='text-white'>Line</label>
               <input
                 type="radio"
                 name="tool"
@@ -164,7 +164,7 @@ const RoomPage = ({ user, socket, Joinedusers }) => {
               />
             </div>
             <div className="d-flex gap-1 align-itmes-center">
-              <label htmlFor="rectangle">Rectangle</label>
+              <label htmlFor="rectangle" className='text-white'>Rectangle</label>
               <input
                 type="radio"
                 name="tool"
@@ -177,7 +177,7 @@ const RoomPage = ({ user, socket, Joinedusers }) => {
           </div>
           <div className="col-md-3 mx-auto">
             <div className="d-flex  align-items-center justify-content-center">
-              <label htmlFor="color">Select Color : </label>
+              <label htmlFor="color" className='text-white'>Select Color : </label>
               <input
                 type="color"
                 id="color"
@@ -188,15 +188,15 @@ const RoomPage = ({ user, socket, Joinedusers }) => {
             </div>
           </div>
           <div className="col-md-3 d-flex gap-2">
-            <button className="btn btn-primary mt-1" disabled={elements.length === 0} onClick={handleundo}>
+            <button className="btn btn-outline-primary mt-1 text-white " disabled={elements.length === 0} onClick={handleundo}>
               Undo
             </button>
-            <button className="btn btn-outline-primary mt-1" disabled={history.length < 1} onClick={handleredo}>
+            <button className="btn btn-outline-primary mt-1 text-white" disabled={history.length < 1} onClick={handleredo}>
               Redo
             </button>
           </div>
           <div className="col-md-2">
-            <button className="btn btn-danger" onClick={handleCnavasClear}>
+            <button className="btn btn-outline-danger text-white" onClick={handleCnavasClear}>
               Clear Canvas
             </button>
           </div>
@@ -211,7 +211,7 @@ const RoomPage = ({ user, socket, Joinedusers }) => {
         }}
         >
        
-            <button className="btn btn-success mt-2 mb-2 p-0" onClick={handleSaveAsImage}
+            <button className="btn btn-outline-success mt-2 mb-2 p-0" onClick={handleSaveAsImage}
             style={{width:"100%"}}
             >
               Save as Image
@@ -224,13 +224,13 @@ const RoomPage = ({ user, socket, Joinedusers }) => {
                     <>
                       <div className='d-flex gap-5 align-items-center'>
                         <div className="d-flex align-items-center">
-                          <p className='text-capitalize btn btn-primary'>{status}</p>
+                          <p className='text-capitalize btn btn-outline-primary'>{status}</p>
                         </div>
                         <div className="d-flex gap-2 w-100">
-                          <button onClick={startRecording} className='btn btn-success p-1 mt-2 mb-2' style={{ height: "70%" }}>
+                          <button onClick={startRecording} className='btn btn-outline-success p-1 mt-2 mb-2' style={{ height: "70%" }}>
                             Start Recording
                           </button>
-                          <button onClick={stopRecording} className='btn btn-danger p-1 mt-2 mb-2' style={{ height: "70%", width:"70%" }}>
+                          <button onClick={stopRecording} className='btn btn-outline-danger p-1 mt-2 mb-2' style={{ height: "70%", width:"70%" }}>
                             Stop Recording
                           </button>
                         </div>

@@ -1,6 +1,13 @@
 .canvas-container{
     height:500px;
 }
-
+.clear-btn{
+    font-weight:500 ;
+}
+@media only screen and (max-width: 600px) {
+    .canvas-container {
+      padding-left: 1; 
+    }
+  }
   
   
