@@ -60,7 +60,7 @@ const CreateRoomForm = ({ userid, socket, setUser }) => {
               onCopy={() => toast.success('Room Id Copied To Clipboard!')}
             >
               <button
-                className='btn btn-outline-dark border-0 btn-sm'
+                className='btn btn-outline-primary border-0 btn-sm'
                 type='button'
               >
                 Copy
